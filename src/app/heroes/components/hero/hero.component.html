@@ -1,1 +1,35 @@
-<p>hero works! y cambia desde su nuevo modulo</p>
+<h1>{{name}}</h1>
+
+<dl>
+  <td class="fst-italic fs-4 fw-bold">Nombre:</td>
+  <dd class="fs-1">{{name}}</dd>
+
+  <td class="fst-italic fs-4 fw-bold">Edad:</td>
+  <dd class="fs-1">{{edad}}</dd>
+
+  <td class="fst-italic fs-4 fw-bold ">Método:</td>
+  <dd>{{heroDescrption}}</dd>
+
+  <td class="fst-italic fs-4">Capitalizado:</td>
+  <dd class="fs-1">{{capitalizeName}}</dd>
+</dl>
+
+
+<button
+
+  class="btn btn-primary m-3"
+  *ngIf="name!=='Thor'"
+ (click)="cambiarHeroe()"
+ >
+  Cambiar Nombre
+</button>
+<button
+*ngIf="edad!==40"
+ class="btn btn-primary" (click)="cambiarEdad()">
+  Cambiar Edad
+</button>
+<button
+*ngIf="name==='Thor' && edad===40"
+type="button"
+class="btn btn-primary m-3"
+(click)="resset()">Reset</button>

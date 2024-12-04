@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 
 
 import { HeroModule } from './heroes/heroes.module';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+   CounterComponent,
+
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeroModule
+    HeroModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

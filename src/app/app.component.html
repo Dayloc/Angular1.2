@@ -2,16 +2,23 @@
 <hr>
 <p> Bienvenido a Angular</p>
 <hr>
-
-<h5>Este es el contador creado en mi componente typeSccript</h5><h3>   {{counter}}</h3>
-<hr>
 <div>
-
-  <button (click)="incrementCounter()" >+1</button>
-  <button (click)="resetCounter()" >Reset</button>
-  <button (click)="decrementCounter()" >-1</button>
+  <app-counter-component></app-counter-component>
 </div>
+<div class="container aling-center bg-primary-subtle">
+
+<div class="row d-flex">
+  <!-- <div class="col-6">
+    <app-heroes-hero></app-heroes-hero>
+  </div> -->
+  <div class="col-6">
+   <app-heroes-list></app-heroes-list>
+  </div>
+
+
+
+</div>
+
+
 <hr>
-<app-heroes-hero></app-heroes-hero>
-<hr>
-<app-heroes-list></app-heroes-list>
+
